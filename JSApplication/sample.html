@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>LibraryPortal</title>
+    <link rel="stylesheet" href="sample.css">
+    <script type="text/javascript" src="sample.js"></script>
+</head>
+
+<body>
+    <div class="main">
+        <div class="subDiv">
+            <h3>Library Portal <a href="#" class="ignore">Books</a> </h3>
+        </div>
+        <hr class="horizontal">
+        <div class="subDiv">
+            <form onsubmit={onclick}>
+                <h3>Add New Book</h3>
+                Category<select name="Department" id="department" required>
+                    <option value="IT">IT</option>
+                    <option value="ECE">ECE</option>
+                    <option value="EEE">EEE</option>
+                    <option value="CSE">CSE</option>
+                    <option value="MECH">MECH</option>
+                </select><br />
+                Book<input type="text" id="book" required><br />
+                Author Email<input type="text" id="email" required><br />
+                Author Name<input type="text" id="name" required><br />
+                Published<input type="text" id="published" required><br />
+                Price<input type="text" id="price" required><br />
+                <button class="button" type="submit" onclick=GetValue()>Save</button>
+                <button class="button" type="submit" onclick=Cancel()>Cancel</button>
+                <button class="button" type="submit" onclick=Show()>Show</button>
+            </form>
+        </div>
+        <hr class="horizontal">
+        <div class="subDiv">
+            <p>Copyright @2019 - present Syncfusion</p>
+        </div>
+    </div>
+</body>
+
+</html>

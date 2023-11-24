@@ -1,0 +1,24 @@
+.main
+{
+    display: block;
+    border: solid black;
+    margin: 200px auto;
+    height: 330px;
+    width: 600px;
+}
+.horizontal
+{
+    border: 2px solid black;
+}
+.ignore
+{
+    text-decoration: none;
+}
+.subDiv
+{
+    padding-left: 13px;
+}
+.button
+{
+    padding: 2px 2px;
+}

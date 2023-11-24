@@ -1,0 +1,105 @@
+.center
+{
+    display: flex;
+    margin: 200px auto;
+    height: 400px;
+    width: 700px;
+    background-color: #943c3c;
+}
+.first
+{
+    color: aliceblue;
+    margin: 0px;
+    padding: 50px 37px;
+    height: 200px;
+    width: 300px;
+}
+.first>a
+{
+    text-decoration: none;
+}
+.second
+{
+    margin: 0px;
+    padding: 50px 20px;
+    height: 300px;
+    width: 400px;
+    background-color: white;
+}
+.button
+{
+    background-color: rgb(236, 12, 49);
+    color: aliceblue;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    margin: 7px;
+}
+.fa
+{
+    font-size: 30px;
+    margin: 5px;
+    text-align: left;
+    padding-right: 10px;
+}
+.fa-facebook
+{
+    padding: 8px 155px 8px 10px;
+    color: aliceblue;
+    background-color: rgb(5, 5, 149);
+}
+.fa-google
+{
+    padding: 8px 157px 8px 10px;
+    color: aliceblue;
+    background-color: rgb(245, 10, 10);
+}
+.fa-twitter
+{
+    padding: 8px 166px 8px 10px;
+    color: aliceblue;
+    background-color: skyblue;
+}
+.space
+{
+    padding: 8px;
+    margin: 5px;
+    width:300px;
+}
+.check
+{
+    padding: 5px;
+    margin: 5px;
+}
+.ignore
+{
+    text-decoration: none;
+}
+.body
+{
+    background-color: rgb(129, 103, 103);
+}
+.font
+{
+    font-family: Calibri;
+}
+.fade
+{
+    font-family: Calibri, 'Trebuchet MS', sans-serif;
+    color: rgb(113, 70, 70);
+}
+.ignore-new
+{
+    text-decoration: none;
+    color: rgb(105, 50, 50);
+    font-family: Calibri;
+}
+.pic
+{
+    width: 60%;
+    padding-top: 10px;
+}
+.login
+{
+    font-family: sans-serif;
+}
