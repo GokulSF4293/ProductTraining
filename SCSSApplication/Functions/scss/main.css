@@ -1,0 +1,31 @@
+body {
+  background-color: white;
+}
+
+.paragraph {
+  display: flex;
+  color: white;
+}
+.paragraph .box1 {
+  text-align: center;
+  width: 25%;
+  background-color: blue;
+  margin-right: 20px;
+}
+.paragraph .box2 {
+  text-align: center;
+  width: 50%;
+  background-color: blue;
+  margin-right: 20px;
+}
+.paragraph .box3 {
+  text-align: center;
+  width: 75%;
+  background-color: blue;
+  margin-right: 20px;
+}
+.paragraph .box4 {
+  text-align: center;
+  width: 100%;
+  background-color: blue;
+}

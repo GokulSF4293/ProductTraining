@@ -1,0 +1,52 @@
+$color : white;
+.div
+{
+    border: 2px solid;
+    margin: 150px 220px;
+    width: 1000px;
+    p{
+        color: rgb(188, 102, 102);
+        text-align: center;
+    }
+    display: flex;
+    img{
+        width: 200px;
+        height: 214px;
+        object-fit: cover;
+        padding-left: 35px;
+    }
+    .name
+    {
+        font-size: 24px;
+        font-weight: 600;
+        margin-top: 16px;
+        text-align: center;
+        color: rgb(66, 36, 36);
+    }
+    .button
+    {
+        border: 1px solid #dc6d13;
+        ;
+        padding: 12px 24px;
+        border-radius: 50px;
+        color: #dc6d13;
+        background-color: #e0efff;
+        margin: 0 auto;
+        display: block;
+        cursor: pointer;
+    }
+    #container
+    {
+        max-width: 300px;
+        margin: 10px auto;
+        padding-right: 20px;
+        padding-left: 0;
+    }
+    .card
+    {
+        background-color: $color;
+        border: 1px solid #bacdd8;
+        padding: 8px;
+        border-radius: 12px;
+    }
+}

@@ -1,0 +1,52 @@
+.outBox {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  border: 2px solid black;
+  margin: 200px 300px;
+  padding-left: 10px;
+}
+.outBox p {
+  color: rgb(105, 80, 80);
+}
+.outBox .heading p {
+  text-align: center;
+  padding: 0 20px;
+}
+.outBox .heading .head {
+  text-align: center;
+  font-size: 24px;
+  font-weight: 600;
+}
+.outBox .para {
+  text-align: left;
+}
+.outBox .innerBox {
+  display: flex;
+}
+.outBox .innerBox .fa {
+  border-radius: 12px;
+  font-size: 30px;
+  margin: 5px;
+  text-align: left;
+  padding: 5px;
+  color: red;
+  background-color: wheat;
+}
+.outBox .innerBox .firstCol {
+  flex-direction: column;
+  padding-left: 0;
+  width: 300%;
+  height: 70%;
+}
+.outBox .innerBox .secondCol {
+  flex-direction: column;
+  padding-left: 20px;
+  width: 300%;
+  height: 70%;
+}
+.outBox .innerBox .youtube {
+  flex-direction: column;
+  padding-left: 20px;
+  width: 300%;
+  height: 70%;
+  padding-right: 10px;
+}

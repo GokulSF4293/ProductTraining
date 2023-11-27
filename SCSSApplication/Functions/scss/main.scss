@@ -1,0 +1,49 @@
+$color: (
+    "background": blue,
+    "text": white
+);
+$width: (
+    "small": 25%,
+    "medium": 50%,
+    "large": 75%,
+    "big": 100%
+);
+@function display($getValue){
+    @return map-get($width, $getValue);
+}
+body
+{
+    background-color: map-get($color , text);
+}
+.paragraph
+{
+    display: flex;
+    color: map-get($color, text);
+    .box1
+    {
+        text-align: center;
+        width: display(small);
+        background-color: map-get($color, background);
+        padding-right: 20px;
+    }
+    .box2
+    {
+        text-align: center;
+        width: display(medium);
+        background-color: map-get($color, background);
+        padding-right: 20px;
+    }
+    .box3
+    {
+        text-align: center;
+        width: display(large);
+        background-color: map-get($color, background);
+        padding-right: 20px;
+    }
+    .box4
+    {
+        text-align: center;
+        width: display(big);
+        background-color: map-get($color, background);
+    }
+}

@@ -1,0 +1,59 @@
+@mixin boxDesign($size){
+    flex-direction: column;
+    padding-left: $size;
+    width: 300%;
+    height:70%;
+}
+
+.outBox {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    border: 2px solid black;
+    margin: 200px 300px;
+    padding-left: 10px;
+    p{
+        color: rgb(105, 80, 80);
+    }
+
+    .heading {
+        p {
+            text-align: center;
+            padding: 0 20px;
+        }
+
+        .head {
+            text-align: center;
+            font-size: 24px;
+            font-weight: 600;
+        }
+    }
+    .para
+    {
+        text-align: left;
+    }
+
+    .innerBox {
+        display: flex;
+        .fa {
+            border-radius: 12px;
+            font-size: 30px;
+            margin: 5px;
+            text-align: left;
+            padding: 5px;
+            color: red;
+            background-color: wheat;
+        }
+        .firstCol
+        {
+            @include boxDesign(0);
+        }
+        .secondCol
+        {
+            @include boxDesign(20px);
+        }
+        .youtube
+        {
+            @include boxDesign(20px);
+            padding-right: 10px;
+        }
+    }
+}

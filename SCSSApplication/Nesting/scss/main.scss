@@ -1,0 +1,30 @@
+.div
+{
+    border: 2px solid black;
+    margin: 200px 350px;
+    height: 500px;
+    width: 770px;
+    .heading
+    {
+        text-align: center;
+        padding-bottom: 20px;
+        font-size: 24px;
+        font-weight: 600;
+        color: rgb(66, 36, 36);
+    }
+}
+.container
+{
+    display: flex;
+    .question
+    {
+        font-size: 15px;
+        font-weight: 600;
+    }
+    #{&}1
+    {
+        padding-left: 3px;
+        padding-right: 25px;
+        width: 420px;
+    }
+}
