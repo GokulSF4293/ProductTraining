@@ -1,0 +1,70 @@
+body {
+  margin: 175px;
+}
+.outBox {
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  border: 2px solid black;
+  margin: 200px 300px 200px 0;
+  padding-left: 10px;
+  height: 620px;
+  width: 1200px;
+}
+.outBox p {
+  color: #695050;
+}
+.outBox .heading p {
+  text-align: center;
+  padding: 0 20px;
+}
+.outBox .heading .head {
+  text-align: center;
+  font-size: 24px;
+  font-weight: 600;
+}
+.outBox .para {
+  text-align: left;
+}
+.outBox .innerBox {
+  display: flex;
+}
+.outBox .innerBox .fa {
+  border-radius: 12px;
+  font-size: 30px;
+  margin: 5px;
+  text-align: left;
+  padding: 5px;
+  color: red;
+  background-color: wheat;
+}
+.outBox .innerBox .firstCol {
+  flex-direction: column;
+  padding-left: 20px;
+  width: 300%;
+  height: 70%;
+}
+.outBox .innerBox .facebook {
+  height: 280px;
+}
+.outBox .innerBox .twitter {
+  height: 280px;
+}
+.outBox .innerBox .secondCol {
+  flex-direction: column;
+  padding-left: 20px;
+  width: 300%;
+  height: 70%;
+}
+.outBox .innerBox .secondCol .instagram {
+  height: 280px;
+}
+.outBox .innerBox .secondCol .linkedIn {
+  height: 280px;
+}
+.outBox .innerBox .youtube {
+  flex-direction: column;
+  padding-left: 20px;
+  width: 300%;
+  height: 70%;
+  height: 280px;
+  padding-right: 10px;
+}

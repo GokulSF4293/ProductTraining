@@ -1,0 +1,41 @@
+@soft: white;
+@sky: blue;
+body
+{
+    background-color: @soft;
+}
+.common
+{
+    text-align: center;
+    background-color: @sky;
+    padding-right: 20px;
+    margin-right: 15px;
+}
+.paragraph
+{
+    display: flex;
+    color: @soft;
+    height: 100%;
+    width: 100%;
+    .box1
+    {
+        .common;
+        width: 100% - 75%;
+    }
+    .box2
+    {
+        .common;
+        width: 100% - 50%;
+    }
+    .box3
+    {
+        .common;
+        width: 50% + 25%;
+    }
+    .box4
+    {
+        .common;
+        padding-right: 0px;
+        width: 10% * 10%;
+    }
+}

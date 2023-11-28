@@ -1,0 +1,44 @@
+body {
+  background-color: white;
+}
+.common {
+  text-align: center;
+  background-color: blue;
+  padding-right: 20px;
+  margin-right: 15px;
+}
+.paragraph {
+  display: flex;
+  color: white;
+  height: 100%;
+  width: 100%;
+}
+.paragraph .box1 {
+  text-align: center;
+  background-color: blue;
+  padding-right: 20px;
+  margin-right: 15px;
+  width: 25%;
+}
+.paragraph .box2 {
+  text-align: center;
+  background-color: blue;
+  padding-right: 20px;
+  margin-right: 15px;
+  width: 50%;
+}
+.paragraph .box3 {
+  text-align: center;
+  background-color: blue;
+  padding-right: 20px;
+  margin-right: 15px;
+  width: 75%;
+}
+.paragraph .box4 {
+  text-align: center;
+  background-color: blue;
+  padding-right: 20px;
+  margin-right: 15px;
+  padding-right: 0px;
+  width: 100%;
+}

@@ -1,0 +1,27 @@
+.div {
+  border: 2px solid black;
+  margin: 200px 350px;
+  height: 500px;
+  width: 770px;
+  font-family: calibri;
+}
+.div .heading {
+  text-align: center;
+  padding-bottom: 20px;
+  font-size: 24px;
+  font-weight: 600;
+  color: #865151;
+}
+.div .container {
+  display: flex;
+}
+.div .container .container1 {
+  padding-left: 3px;
+  padding-right: 25px;
+  width: 367px;
+}
+.div .container .question {
+  font-size: 15px;
+  font-weight: 600;
+  color: #865151;
+}
