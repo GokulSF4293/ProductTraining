@@ -3,35 +3,102 @@
 
 <head>
     <title>LibraryPortal</title>
-    <link rel="stylesheet" href="sample.css">
+    <link rel="stylesheet" href="main.css">
     <script type="text/javascript" src="sample.js"></script>
 </head>
 
 <body>
     <div class="main">
         <div class="subDiv">
-            <h3>Library Portal <a href="#" class="ignore">Books</a> </h3>
+            <img class="image" src="icon.png" alt="Icon"><strong class="strong">Library Portal</strong><a href="#"
+                class="ignore">Books</a>
         </div>
         <hr class="horizontal">
         <div class="subDiv">
-            <form onsubmit={onclick}>
+            <div class="innerDiv">
                 <h3>Add New Book</h3>
-                Category<select name="Department" id="department" required>
-                    <option value="IT">IT</option>
-                    <option value="ECE">ECE</option>
-                    <option value="EEE">EEE</option>
-                    <option value="CSE">CSE</option>
-                    <option value="MECH">MECH</option>
-                </select><br />
-                Book<input type="text" id="book" required><br />
-                Author Email<input type="text" id="email" required><br />
-                Author Name<input type="text" id="name" required><br />
-                Published<input type="text" id="published" required><br />
-                Price<input type="text" id="price" required><br />
-                <button class="button" type="submit" onclick=GetValue()>Save</button>
-                <button class="button" type="submit" onclick=Cancel()>Cancel</button>
-                <button class="button" type="submit" onclick=Show()>Show</button>
-            </form>
+                <form onsubmit="return Show()" action="show.html">
+                    <table>
+                        <tr>
+                            <td>
+                                <strong>Category</strong>
+                            </td>
+                            <td>
+                                <select class="category" name="Department" id="department">
+                                    <option value="IT">IT</option>
+                                    <option value="ECE">ECE</option>
+                                    <option value="EEE">EEE</option>
+                                    <option value="CSE">CSE</option>
+                                    <option value="MECH">MECH</option>
+                                </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <strong>Book</strong>
+                            </td>
+                            <td>
+                                <input type="text" id="book" onkeyup="BookValidate()">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td id="bookError"></td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <strong>Author Email</strong>
+                            </td>
+                            <td>
+                                <input type="text" id="email" onkeyup="MailValidate()">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td id="mailError"></td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <strong>Author Name</strong>
+                            </td>
+                            <td>
+                                <input type="text" id="name" onkeyup="NameValidate()">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td id="nameError"></td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <strong>Published</strong>
+                            </td>
+                            <td>
+                                <input type="text" id="published" onkeyup="PublishValidate()">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td id="publishedError"></td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <strong>Price</strong>
+                            </td>
+                            <td>
+                                <input type="text" id="price" onkeyup="PriceValidate()">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td id="priceError"></td>
+                        </tr>
+                    </table>
+                    <button class="button" type="button" onclick="GetValue()">Save</button>
+                    <button class="button" type="reset" onclick=Cancel()>Cancel</button>
+                    <button class="button" type="submit">Show</button>
+                </form>
+            </div>
         </div>
         <hr class="horizontal">
         <div class="subDiv">
