@@ -1,0 +1,47 @@
+.div {
+  border: 2px solid;
+  margin: 150px 220px;
+  width: 1000px;
+  display: flex;
+}
+.div p {
+  color: rgb(188, 102, 102);
+  text-align: center;
+  height: 300px;
+}
+.div img {
+  width: 200px;
+  height: 214px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  padding-left: 35px;
+}
+.div .name {
+  font-size: 24px;
+  font-weight: 600;
+  margin-top: 16px;
+  text-align: center;
+  color: rgb(66, 36, 36);
+}
+.div .button {
+  border: 1px solid #dc6d13;
+  padding: 12px 24px;
+  border-radius: 50px;
+  color: #dc6d13;
+  background-color: #e0efff;
+  margin: 0 auto;
+  display: block;
+  cursor: pointer;
+}
+.div #container {
+  max-width: 300px;
+  margin: 10px auto;
+  padding-right: 20px;
+  padding-left: 0;
+}
+.div .card {
+  background-color: white;
+  border: 1px solid #bacdd8;
+  padding: 8px;
+  border-radius: 12px;
+}

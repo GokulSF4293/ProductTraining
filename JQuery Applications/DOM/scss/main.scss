@@ -1,0 +1,21 @@
+@import './variables';
+.container
+{
+    border: 2px solid $color;
+    margin: 200px 350px;
+    height: 325px;
+    width: 750px;
+    font-family: $font;
+    .heading
+    {
+        font-size: 20px;
+        font-weight: 600;
+    }
+    p{
+        padding-left: 5px;
+        .tags
+        {
+            color: $tagColor;
+        }
+    }
+}

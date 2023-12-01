@@ -1,0 +1,75 @@
+.div {
+  border: 2px solid;
+  margin: 150px 220px;
+  width: 1000px;
+  height: 680px;
+  display: flex;
+}
+.div #container1, .div #container3, .div #container2 {
+  max-width: 300px;
+  margin: 10px auto;
+  padding-right: 20px;
+  padding-left: 0;
+}
+.div #container1 p, .div #container3 p, .div #container2 p {
+  color: rgb(188, 102, 102);
+  text-align: center;
+  height: 300px;
+}
+.div #container1 img, .div #container3 img, .div #container2 img {
+  width: 200px;
+  height: 214px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  padding-left: 35px;
+}
+.div #container1 .name, .div #container3 .name, .div #container2 .name {
+  font-size: 24px;
+  font-weight: 600;
+  margin-top: 16px;
+  text-align: center;
+  color: rgb(66, 36, 36);
+}
+.div #container1 .button1, .div #container3 .button1, .div #container3 .button3, .div #container2 .button1, .div #container2 .button2 {
+  border: 2px solid #dc6d13;
+  padding: 12px 24px;
+  border-radius: 50px;
+  color: #dc6d13;
+  background-color: #e0efff;
+  margin: 0 auto;
+  display: block;
+  cursor: pointer;
+}
+.div #container1 .card, .div #container3 .card, .div #container2 .card {
+  background-color: white;
+  border: 2px solid #bacdd8;
+  padding: 8px;
+  border-radius: 12px;
+}
+.div #container2 p {
+  color: rgb(114, 26, 26);
+  font-size: 20px;
+  height: 280px;
+}
+.div #container2 .name {
+  font-size: 34px;
+  font-weight: 700;
+}
+.div #container2 .button2 {
+  border-color: red;
+  background-color: black;
+}
+.div #container3 p {
+  color: blue;
+  font-size: 25px;
+  height: 250px;
+}
+.div #container3 .name {
+  font-size: 44px;
+  font-weight: 800;
+}
+.div #container3 .button3 {
+  color: white;
+  background-color: red;
+  border: 5px solid black;
+}
