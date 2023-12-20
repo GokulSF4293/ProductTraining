@@ -1,0 +1,63 @@
+﻿@model IEnumerable<Library>
+
+@{
+    ViewData["Title"] = "Library";
+}
+<div class="container">
+    <div class="text-center">
+        <table class="table table-bordered table-striped">
+            <thead class="thead-dark">
+                <tr>
+                    <th>ID</th>
+                    <th>Category</th>
+                    <th>Book</th>
+                    <th>Author</th>
+                    <th>Published</th>
+                    <th>Price</th>
+                    <th>Updated</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var book in Model)
+                {
+                    if (book.IsDeleted == false)
+                    {
+                        <tr>
+                            <td>
+                                <a asp-action="BookDetails" asp-controller="Home" asp-route-id="@book.BookId" class="no-underline">@book.BookId</a>
+                            </td>
+                            <td>@book.CategoryName</td>
+                            <td>@book.BookName</td>
+                            <td>@book.AuthorName</td>
+                            <td>@book.Price</td>
+                            <td>@book.PublishedYear</td>
+                            <td>@(book.UpdatedOn.HasValue ? book.UpdatedOn.Value.ToString("yyyy-MM-dd") : "N/A")</td>
+                            @* <td>@(book.UpdatedOn.HasValue ? book.UpdatedOn.Value.ToString("yyyy-MM-dd") : "N/A")</td> *@
+                            <td>
+                                <a asp-action="EditBookDetails" asp-controller="Home" asp-route-id="@book.BookId" class="btn btn-outline-primary btn-sm">Edit</a>
+                                <a asp-action="DeleteBook" asp-controller="Home" asp-route-id="@book.BookId" onclick="return Delete()" class="btn btn-outline-danger btn-sm">Delete</a>
+                            </td>
+                        </tr>
+                    }
+                }
+            </tbody>
+        </table>
+    </div>
+</div>
+
+<script>
+    function Delete() 
+    {
+        var userConfirmed = confirm("Do you want to delete the book?");
+
+        if (userConfirmed) {
+            alert("Book deleted successfully");
+            return true;
+        } else {
+            alert("Deletion canceled");
+            window.location.href = '@Url.Action("Index", "Home")';
+            return false;
+        }
+    }
+</script>

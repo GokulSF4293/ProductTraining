@@ -1,0 +1,55 @@
+﻿@model Library
+@{
+    ViewData["Title"] = "Edit Book Details";
+}
+<h1>@ViewData["Title"]</h1>
+<div class="container mt-5">
+    <form asp-action="EditBookDetails" asp-controller="Home" method="post">
+        <div class="form-group">
+            <input type="hidden" asp-for="BookId" />
+            <label asp-for="CategoryName">Category:</label>
+            <select class="form-control" asp-for="CategoryName">
+                <option>IT</option>
+                <option>Electronics</option>
+                <option>Mechanical</option>
+                <option>Civil</option>
+                <option>Electricals</option>
+                <option>Economics</option>
+            </select>
+            <span asp-validation-for="CategoryName" class="text-danger"></span>
+        </div>
+        <br />
+        <div class="form-group">
+            <label asp-for="BookName">Book:</label>
+            <input type="text" asp-for="BookName" class="form-control">
+            <span asp-validation-for="BookName" class="text-danger"></span>
+        </div>
+        <br />
+        <div class="form-group">
+            <label asp-for="AuthorName">Author:</label>
+            <input type="text" asp-for="AuthorName" class="form-control">
+            <span asp-validation-for="AuthorName" class="text-danger"></span>
+        </div>
+        <br />
+        <div class="form-group">
+            <label asp-for="PublishedYear">Published:</label>
+            <input type="text" class="form-control" asp-for="PublishedYear">
+            <span asp-validation-for="PublishedYear" class="text-danger"></span>
+        </div>
+        <br />
+        <div class="form-group">
+            <label asp-for="Price">Price:</label>
+            <input type="text" class="form-control" asp-for="Price">
+            <span asp-validation-for="Price" class="text-danger"></span>
+        </div>
+        <br />
+        <div class="form-group">
+            <label asp-for="UpdatedOn">Updated:</label>
+            <input type="text" class="form-control" asp-for="UpdatedOn">
+            <span asp-validation-for="UpdatedOn" class="text-danger"></span>
+        </div>
+        <br />
+        <button type="submit" class="btn btn-primary" >Submit</button>
+        <a class="btn btn-secondary"  asp-controller="Home" asp-action="Index">Cancel</a>
+    </form>
+</div>

@@ -1,0 +1,32 @@
+﻿@model Library;
+@{
+    ViewData["Title"] = "Book Details";
+}
+<h1>@ViewData["Title"]</h1>
+<div class="container mt-5">
+    <div class="card">
+        <div class="card-header">
+            <h5 class="card-title">@Model.BookName</h5>
+        </div>
+        <div class="card-body">
+            <p class="card-text">
+                <strong class="d-inline-block mb-2">Category:</strong> @Model.CategoryName <br>
+                <strong class="d-inline-block mb-2">Author:</strong> @Model.AuthorName <br>
+                <strong class="d-inline-block mb-2">Published:</strong> @Model.PublishedYear <br>
+                <strong class="d-inline-block mb-2">Price:</strong> @Model.Price <br>
+                <strong class="d-inline-block mb-2">Updated:</strong> @(Model.UpdatedOn.HasValue ? Model.UpdatedOn.Value.ToString("yyyy-MM-dd") : "N/A")
+            </p>
+        </div>
+        <table>
+            <tr>
+                <td>
+                    <a asp-action="EditBookDetails" asp-controller="Home" asp-route-id="@Model.BookId" class="btn btn-outline-primary btn-sm">Edit</a>
+                    <a asp-action="DeleteBook" asp-controller="Home" asp-route-id="@Model.BookId" onclick="return Delete()" class="btn btn-outline-danger btn-sm">Delete</a>
+                </td>
+            </tr>
+        </table>
+        <br />
+    </div>
+</div>
+    
+
