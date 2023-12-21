@@ -20,8 +20,8 @@
         <table>
             <tr>
                 <td>
-                    <a asp-action="EditBookDetails" asp-controller="Home" asp-route-id="@Model.BookId" class="btn btn-outline-primary btn-sm">Edit</a>
-                    <a asp-action="DeleteBook" asp-controller="Home" asp-route-id="@Model.BookId" onclick="return Delete()" class="btn btn-outline-danger btn-sm">Delete</a>
+                    <a asp-action="Edit" asp-controller="Books" asp-route-id="@Model.BookId" class="btn btn-outline-primary btn-sm">Edit</a>
+                    <a asp-action="DeleteBook" asp-controller="Books" asp-route-id="@Model.BookId" onclick="return Delete()" class="btn btn-outline-danger btn-sm">Delete</a>
                 </td>
             </tr>
         </table>

@@ -43,9 +43,9 @@ namespace libraryManagement.Migrations
                     { 4, "Jacques Heyman", "Structural Engineering", 4, false, 800, 2004, new DateTime(2019, 11, 21, 0, 0, 0, 0, DateTimeKind.Unspecified) },
                     { 5, "Michael Faraday", "DC Motors", 5, false, 400, 2004, new DateTime(2019, 11, 1, 0, 0, 0, 0, DateTimeKind.Unspecified) },
                     { 6, "Nassim Nicholas", "Economics", 6, true, 300, 2005, new DateTime(2019, 11, 2, 0, 0, 0, 0, DateTimeKind.Unspecified) },
-                    { 7, "-", "Data Structure", 1, false, 430, 0, new DateTime(2019, 11, 3, 0, 0, 0, 0, DateTimeKind.Unspecified) },
-                    { 8, "Abraham Silberschatz", "Operating Systems", 1, true, 0, 2007, new DateTime(2019, 11, 4, 0, 0, 0, 0, DateTimeKind.Unspecified) },
-                    { 9, "Wikliam Gothmann", "Digital Electronics", 2, false, 0, 0, new DateTime(2019, 11, 2, 0, 0, 0, 0, DateTimeKind.Unspecified) }
+                    { 7, "-", "Data Structure", 1, false, 430, 2006, new DateTime(2019, 11, 3, 0, 0, 0, 0, DateTimeKind.Unspecified) },
+                    { 8, "Abraham Silberschatz", "Operating Systems", 1, true, 560, 2007, new DateTime(2019, 11, 4, 0, 0, 0, 0, DateTimeKind.Unspecified) },
+                    { 9, "Wikliam Gothmann", "Digital Electronics", 2, false, 730, 2005, new DateTime(2019, 11, 2, 0, 0, 0, 0, DateTimeKind.Unspecified) }
                 });
         }
 

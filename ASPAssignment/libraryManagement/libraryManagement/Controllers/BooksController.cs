@@ -5,13 +5,13 @@ using System.Diagnostics;
 
 namespace libraryManagement.Controllers
 {
-    public class HomeController : Controller
+    public class BooksController : Controller
 
     {
         private ILibraryRepository _bookRepository;
-        private readonly ILogger<HomeController> _logger;
+        private readonly ILogger<BooksController> _logger;
 
-        public HomeController(ILogger<HomeController> logger, ILibraryRepository libraryRepository)
+        public BooksController(ILogger<BooksController> logger, ILibraryRepository libraryRepository)
         {
             _bookRepository = libraryRepository;
             _logger = logger;
@@ -22,35 +22,46 @@ namespace libraryManagement.Controllers
             var Model = _bookRepository.GetAllBooks();
             return View(Model);
         }
+        [Route("{controller}/new-{action}")]
         [HttpGet]
-        public ViewResult NewBook()
+        public ViewResult Add()
         {
             return View();
         }
+        [Route("{controller}/new-{action}")]
         [HttpPost]
-        public IActionResult NewBook(Library book)
+        public IActionResult Add(Library book)
         {
-            if(ModelState.IsValid) 
+            if(ModelState.IsValid && book.CategoryName != Department.None)
             {
                 Library newBook = _bookRepository.Add(book);
                 return RedirectToAction("Index");
             }
             return View();
         }
-
-        public IActionResult BookDetails(int id)
+        [Route("{controller}/{id}-{action}")]
+        public IActionResult View(int id)
         {
             var book = _bookRepository.GetBook(id);
+            if(book == null || book.IsDeleted == true)
+            {
+                return RedirectToAction("ErrorPage");
+            }
             return View(book);
         }
+        [Route("{controller}/edit/{id}-{action}")]
         [HttpGet]
-        public ViewResult EditBookDetails(int id)
+        public IActionResult Edit(int id)
         {
             var book = _bookRepository.GetBook(id);
+            if (book == null || book.IsDeleted == true)
+            {
+                return RedirectToAction("ErrorPage");
+            }
             return View(book);
         }
         [HttpPost]
-        public IActionResult EditBookDetails(Library modifiedBook)
+        public IActionResult Edit(Library modifiedBook)
         {
             if (ModelState.IsValid)
             {
@@ -64,10 +75,9 @@ namespace libraryManagement.Controllers
                 book.CategoryName = modifiedBook.CategoryName;
 
                 _bookRepository.Update(book);
-                return RedirectToAction("BookDetails", new { id = book.BookId });
+                return RedirectToAction("View", new { id = book.BookId });
             }
-            return View("EditBookDetails", modifiedBook);
-            //// return RedirectToAction("EditBookDetails");
+            return View("Edit", modifiedBook);
         }
 
         public IActionResult DeleteBook(int id) 
@@ -82,6 +92,11 @@ namespace libraryManagement.Controllers
                 _bookRepository.Delete(book);
             }
             return RedirectToAction("Index");
+        }
+
+        public IActionResult ErrorPage() 
+        {
+            return View("ErrorPage");
         }
 
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]

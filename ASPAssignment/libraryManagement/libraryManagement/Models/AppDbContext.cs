@@ -20,7 +20,7 @@ namespace libraryManagement.Models
                     CategoryName = Department.IT,
                     UpdatedOn = new DateTime(2019, 11, 27),
                     IsDeleted = false,
-                    BookName = "C++",
+                    BookName = "C",
                     AuthorName = "Balaguruswamy",
                     PublishedYear = 2001,
                     Price = 500
@@ -89,7 +89,7 @@ namespace libraryManagement.Models
                     IsDeleted = false,
                     BookName = "Data Structure",
                     AuthorName = "-",
-                    PublishedYear = 0,
+                    PublishedYear = 2006,
                     Price = 430
                 },
                 new Library
@@ -101,7 +101,7 @@ namespace libraryManagement.Models
                     BookName = "Operating Systems",
                     AuthorName = "Abraham Silberschatz",
                     PublishedYear = 2007,
-                    Price = 0
+                    Price = 560
                 },
                 new Library
                 {
@@ -111,10 +111,10 @@ namespace libraryManagement.Models
                     IsDeleted = false,
                     BookName = "Digital Electronics",
                     AuthorName = "Wikliam Gothmann",
-                    PublishedYear = 0,
-                    Price = 0
+                    PublishedYear = 2005,
+                    Price = 730
                 }
-                ); ;
+                ); 
         }
     }
 }

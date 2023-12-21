@@ -5,7 +5,8 @@ namespace libraryManagement.Models
 {
     public enum Department
     {
-        IT=1,
+        None,
+        IT,
         Electronics,
         Mechanical,
         Civil,
@@ -14,7 +15,7 @@ namespace libraryManagement.Models
     }
     public class Library
     {
-        [Required(ErrorMessage = "Please enter the Category of the Book.")]
+        [Required(ErrorMessage = "Please enter the Category of the Book.")]     
         public Department? CategoryName { get; set; }
         [Required(ErrorMessage = "Please enter the Updated Date of the Book.")]
         public DateTime? UpdatedOn { get; set; }

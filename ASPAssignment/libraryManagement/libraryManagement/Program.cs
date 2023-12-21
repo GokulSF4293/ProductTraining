@@ -7,9 +7,6 @@ builder.Services.AddControllersWithViews();
 builder.Services.AddDbContextPool<libraryManagement.Models.AppDbContext>(
     options => options.UseSqlServer(builder.Configuration.GetConnectionString("LibraryDBConnection")));
 
-
-
-
 builder.Services.AddMvc().AddXmlSerializerFormatters();
 builder.Services.AddScoped<ILibraryRepository, MockLibraryRepository>();
 
@@ -32,6 +29,6 @@ app.UseAuthorization();
 
 app.MapControllerRoute(
     name: "default",
-    pattern: "{controller=Home}/{action=Index}/{id?}");
+    pattern: "{controller=Books}/{action=Index}/{id?}");
 
 app.Run();

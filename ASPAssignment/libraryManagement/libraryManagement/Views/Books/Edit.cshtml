@@ -4,11 +4,12 @@
 }
 <h1>@ViewData["Title"]</h1>
 <div class="container mt-5">
-    <form asp-action="EditBookDetails" asp-controller="Home" method="post">
+    <form asp-action="Edit" asp-controller="Books" method="post">
         <div class="form-group">
             <input type="hidden" asp-for="BookId" />
             <label asp-for="CategoryName">Category:</label>
             <select class="form-control" asp-for="CategoryName">
+                <option>None</option>
                 <option>IT</option>
                 <option>Electronics</option>
                 <option>Mechanical</option>
@@ -50,6 +51,6 @@
         </div>
         <br />
         <button type="submit" class="btn btn-primary" >Submit</button>
-        <a class="btn btn-secondary"  asp-controller="Home" asp-action="Index">Cancel</a>
+        <a class="btn btn-secondary"  asp-controller="Books" asp-action="Index">Cancel</a>
     </form>
 </div>

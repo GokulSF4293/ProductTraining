@@ -12,7 +12,7 @@ using libraryManagement.Models;
 namespace libraryManagement.Migrations
 {
     [DbContext(typeof(AppDbContext))]
-    [Migration("20231220114114_Library")]
+    [Migration("20231221044537_Library")]
     partial class Library
     {
         /// <inheritdoc />
@@ -137,7 +137,7 @@ namespace libraryManagement.Migrations
                             CategoryName = 1,
                             IsDeleted = false,
                             Price = 430,
-                            PublishedYear = 0,
+                            PublishedYear = 2006,
                             UpdatedOn = new DateTime(2019, 11, 3, 0, 0, 0, 0, DateTimeKind.Unspecified)
                         },
                         new
@@ -147,7 +147,7 @@ namespace libraryManagement.Migrations
                             BookName = "Operating Systems",
                             CategoryName = 1,
                             IsDeleted = true,
-                            Price = 0,
+                            Price = 560,
                             PublishedYear = 2007,
                             UpdatedOn = new DateTime(2019, 11, 4, 0, 0, 0, 0, DateTimeKind.Unspecified)
                         },
@@ -158,8 +158,8 @@ namespace libraryManagement.Migrations
                             BookName = "Digital Electronics",
                             CategoryName = 2,
                             IsDeleted = false,
-                            Price = 0,
-                            PublishedYear = 0,
+                            Price = 730,
+                            PublishedYear = 2005,
                             UpdatedOn = new DateTime(2019, 11, 2, 0, 0, 0, 0, DateTimeKind.Unspecified)
                         });
                 });

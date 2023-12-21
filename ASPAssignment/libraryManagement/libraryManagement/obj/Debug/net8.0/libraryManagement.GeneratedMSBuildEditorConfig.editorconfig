@@ -18,20 +18,24 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes =
 build_property.MSBuildProjectDirectory = C:\Users\GokulSivakumar\OneDrive - Syncfusion\Desktop\ProductTraining\ASPAssignment\libraryManagement\libraryManagement
 build_property._RazorSourceGeneratorDebug = 
 
-[C:/Users/GokulSivakumar/OneDrive - Syncfusion/Desktop/ProductTraining/ASPAssignment/libraryManagement/libraryManagement/Views/Home/BookDetails.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxCb29rRGV0YWlscy5jc2h0bWw=
+[C:/Users/GokulSivakumar/OneDrive - Syncfusion/Desktop/ProductTraining/ASPAssignment/libraryManagement/libraryManagement/Views/Books/Add.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQm9va3NcQWRkLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/GokulSivakumar/OneDrive - Syncfusion/Desktop/ProductTraining/ASPAssignment/libraryManagement/libraryManagement/Views/Home/EditBookDetails.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxFZGl0Qm9va0RldGFpbHMuY3NodG1s
+[C:/Users/GokulSivakumar/OneDrive - Syncfusion/Desktop/ProductTraining/ASPAssignment/libraryManagement/libraryManagement/Views/Books/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQm9va3NcRWRpdC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/GokulSivakumar/OneDrive - Syncfusion/Desktop/ProductTraining/ASPAssignment/libraryManagement/libraryManagement/Views/Home/Index.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
+[C:/Users/GokulSivakumar/OneDrive - Syncfusion/Desktop/ProductTraining/ASPAssignment/libraryManagement/libraryManagement/Views/Books/ErrorPage.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQm9va3NcRXJyb3JQYWdlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/GokulSivakumar/OneDrive - Syncfusion/Desktop/ProductTraining/ASPAssignment/libraryManagement/libraryManagement/Views/Home/NewBook.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxOZXdCb29rLmNzaHRtbA==
+[C:/Users/GokulSivakumar/OneDrive - Syncfusion/Desktop/ProductTraining/ASPAssignment/libraryManagement/libraryManagement/Views/Books/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQm9va3NcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/GokulSivakumar/OneDrive - Syncfusion/Desktop/ProductTraining/ASPAssignment/libraryManagement/libraryManagement/Views/Books/View.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQm9va3NcVmlldy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/GokulSivakumar/OneDrive - Syncfusion/Desktop/ProductTraining/ASPAssignment/libraryManagement/libraryManagement/Views/Shared/Error.cshtml]
